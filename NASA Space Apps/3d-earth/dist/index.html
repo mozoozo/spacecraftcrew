@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Satellites</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <div class="container">
+  <div>
+<!-- partial:index.partial.html -->
+<div id="container" ></div>
+<a id="LEO" onclick="myFunction()">
+  <h2>LEO</h2>
+  <div class="item-hints">
+    <div id="hint2" class="hint" data-position="4">
+      <!-- is-hint -->
+      <span id="radius1" class="hint-radius"></span>
+      <span class="hint-dot"></span>
+      <div id="leo" class="hint-content do--split-children">
+
+      </div>
+    </div>
+  </div></a>
+
+<div id="box"></div>
+<a href="/3d-cube-image-gallery/dist/index.html"><img class="box1-img" style="position: absolute; width: 100px; height: auto; display: inline-block; left: 5px; top: 300px; border-radius: 50%;" src="https://science.nasa.gov/science-red/s3fs-public/styles/background_image_file_size/public/thumbnails/image/IBEX_1.png?itok=gH_9jKvA" alt=""></a>
+
+<a id="MEO" onclick="myFunction2()">
+  <h2>MEO</h2>
+  <div class="item-hints">
+    <div id="hint1" class="hint" data-position="1">
+      <!-- is-hint -->
+      <span id="radius2" class="hint-radius"></span>
+      <span class="hint-dot"></span>
+      <div class="hint-content do--split-children">
+        
+      </div>
+    </div>
+  </div></a>
+
+  <div class="box2"></div>
+  <a href="/GPS.html"><img class="box2-img" style="position: absolute; width: 100px; height: auto; display: inline-block; left: 190px; top: 300px; border-radius: 50%;" src="WhatsApp Image 2022-09-23 at 9.19.58 PM.jpeg" alt=""></a>
+
+  <a id="HEO" onclick="myFunction3()">
+    <h2>HEO</h2>
+    <div class="item-hints">
+      <div class="hint" data-position="4">
+        <!-- is-hint -->
+        <span class="hint-radius"></span>
+        <span class="hint-dot"></span>
+        <div class="hint-content do--split-children">
+
+        </div>
+      </div>
+
+    </div></a><div class="box3"></div>
+    <a href="/SAT.html"><img class="box3-img" style="position: absolute; width: 100px; height: auto; display: inline-block; left: 370px; top: 300px; border-radius: 50%;" src="WhatsApp Image 2022-09-23 at 9.19.48 PM.jpeg" alt=""></a>
+
+<div class="box4"></div>
+<div class="box5"></div>
+<div class="box6"></div>
+
+<div id="LEO2">
+  <i class='fa-solid fa-xmark' style="position: absolute; right: 20px; top: 10px; font-size: 50px; cursor: pointer;" onclick="del()"></i>
+  <h1>Low Earth Orbit</h1>
+  <p>A low earth orbit (LEO) satellite is an object, generally a piece of electronic equipment, that circles around the earth at lower altitudes than geosynchronous satellites.
+    LEO satellites orbit between 2,000 and 200 kilometers above the earth. 
+    LEO satellites are commonly used for communications, military reconnaissance, spying and other imaging applications.
+    The range of LEO satellites ends where medium earth orbit (MEO) begins at 2,000 km. MEO extends to the reaches of geostationary or geosynchronous orbit.</p>
+    <img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2020/03/low_earth_orbit/21862713-4-eng-GB/Low_Earth_orbit_pillars.png" alt="">
+</div>
+</div>
+
+
+<div id="MEO2">
+  <i class='fa-solid fa-xmark' style="position: absolute; right: 20px; top: 10px; font-size: 50px; cursor: pointer;" onclick="del2()"></i>
+  <h1 style="width: 100%; margin-left: -10px; margin-top: 35px;">Medium Earth Orbit</h1>
+  <p>A medium Earth orbit (MEO) is an Earth-centered orbit with an altitude above a low Earth orbit (LEO) and below a high Earth orbit (HEO) – between 2,000 and 35,786 km above sea level.
+    -Communications satellites in MEO include the O3b and forthcoming O3b mPOWER constellations for telecommunications and data backhaul to maritime, aero and remote locations (with an altitude of 8,063 kilometres).
+    -Communications satellites to cover the North and South Pole are also put in MEO.</p>
+    <img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2014/07/galileo_constellation/14631968-1-eng-GB/Galileo_constellation_pillars.jpg" alt="">
+</div>
+
+<div id="GEO">
+  <i class='fa-solid fa-xmark' style="position: absolute; right: 20px; top: 10px; font-size: 50px; cursor: pointer;" onclick="del3()"></i>
+  <h1 style="margin-top: 40px; margin-right: 40px; text-align: center;">High Earth Orbit</h1>
+  <p>A high Earth orbit is a geocentric orbit with an altitude entirely above that of a geosynchronous orbit (35,786 kilometres, 22,236 mi).
+    The orbital periods of such orbits are greater than 24 hours, therefore satellites in such orbits have an apparent retrograde motion – that is, even if they are in a prograde orbit (0° ≤ inclination < 90°), their orbital velocity is lower than Earth's rotational speed, causing their ground track to move westward on Earth's surface.</p>
+    <img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2020/03/geostationary_orbit/21862672-4-eng-GB/Geostationary_orbit_pillars.png" alt="">
+</div>
+</div>
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/123879/three.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/123879/OrbitControls.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/123879/DeviceOrientationControls.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/123879/StereoEffect.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

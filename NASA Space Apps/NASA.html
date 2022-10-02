@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="NASA.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Nimbus Challenge Home Page</title>
+</head>
+<body>
+<div id="hero">
+    <nav>
+        <h1 style="position: absolute;">Spacecraft Crew</h1>
+        <h1 style="position: absolute; right: 0; color: rgb(43, 0, 255);">NIMBUS TO NOW CHALLENGE</h1>
+        <i style="cursor: pointer" onclick="myFunction()"  id="menue" class="fa-solid fa-bars"></i>
+        <div id="menue2">
+            <i style="font-size: 40px; cursor: pointer; float: right; margin-right: 40px; color: white; margin-top: 10px;" onclick="myFunction2()" class="fa-solid fa-xmark"></i>
+            <ul>
+                <hr>
+                <li><i style="position: absolute; top: 90px; bottom: 50px; left: 130px; color: white; font-size: 30px;"  class="fa-solid fa-house"></i><a href="NASA.html">Home</a></li> 
+                <hr>   
+                <li><i  style="position: absolute; top: 280px; bottom: 50px; left: 130px; color: white; font-size: 30px;" class="fa-solid fa-satellite"></i><a href="/3d-earth/dist/index.html">Satellites</a></li>
+                <hr>
+                <li><i style="position: absolute; top: 470px; bottom: 50px; left: 130px; color: white; font-size: 30px;" class="fa-sharp fa-solid fa-id-badge"></i><a href="CONTACT.html">Contacts</a></li>
+                <hr>
+                <li><a href="ABOUT.html">About</a></li>
+                <hr>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <main id="box">
+            <h1>NASA Earth Observation</h1>
+            <h2>Overview of NASA's Earth Observing System (NEOS) </h2>
+            <p>NASA's Earth Observing System (EOS) is a coordinated series of polar-orbiting and low inclination satellites <br> for long-term global observations of the land surface, biosphere, solid Earth, atmosphere, and oceansmission is to help <br> you picture climate and environmental changes as they occur on our home planet. Here you can browse and download imagery of satellite data from NASA's constellation of Earth Observing System satellites.</p>
+            <img src="/imgs/NASA.png" alt="NEOS">
+
+            <div class="wrapper" onclick="myFunction3()">
+                <a href="./3d-earth/dist/index.html" id="hi" style="bottom: 100px; right: 1100px;">
+                  <div id="sat" style="  background-image: url(/imgs/Satellite.jpg);">
+                      <h1>Satellites</h1>
+                  </div>
+                </a>
+            </div>
+    </main>
+</div>
+
+
+
+
+
+
+    <script src="NASA.js"></script>
+</body>
+</html>

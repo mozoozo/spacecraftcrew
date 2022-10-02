@@ -1,0 +1,122 @@
+*{
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.51);
+      height: 100vh;
+      background-color: black;
+}
+  
+
+ .container {
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 359px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+  .card {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background: rgb(168, 0, 0);
+    border-radius: 15px;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  }
+
+  .card .face {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card .face.face1 {
+    padding: 20px;
+  }
+ 
+  .card .face.face1 h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .card .face.face1 .java {
+    background-color: #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  
+
+  .card .face.face1 .python {
+    background-color: #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card .face.face1 .cSharp {
+    background-color: #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card .face.face2 {
+    transition: 0.5s;
+  }
+
+  .card .face.face2 h3 {
+    margin: 0px;
+    padding: 0;
+    font-size: 2em;
+    color: #fff;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+
+  .card:hover .face.face2 {
+    height: 60px;
+  }
+
+  .card:hover .face.face2 h2 {
+    font-size: 2em;
+  }
+
+  .card:nth-child(1) .face.face2 {
+    background-image: linear-gradient(40deg, #090068 0%, #07003c 45%, #000000 100%);
+    border-radius: 15px;
+  }
+
+  .card:nth-child(2) .face.face2 {
+    background-image: linear-gradient(40deg, #090068 0%, #07003c 45%, #000000 100%);
+    border-radius: 15px;
+  }
+
+  .card:nth-child(3) .face.face2 {
+    background-image: linear-gradient(40deg, #090068 0%, #07003c 45%, #000000 100%);
+    border-radius: 15px;
+  }
+
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.4;
+ }

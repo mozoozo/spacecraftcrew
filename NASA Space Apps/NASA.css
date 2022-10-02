@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+#hero{
+    display: flex;
+    background-color: antiquewhite;
+    height: 90vh;
+    justify-content: center;
+    background-image: url(/imgs/ISS.jpg);
+    background-size: 100% 100%;
+    height: 721px;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.766);
+}
+
+
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+}
+
+nav h1{
+    color: white;
+    background-color: transparent;
+    padding: 15px;
+}
+
+#menue{
+    position: absolute;
+    float: left;
+    color: white;
+    font-size: 30px;
+    background-color: transparent;
+    padding: 15px;
+    left: 30px;
+}
+
+main{
+    color: white;
+    letter-spacing: 1px;
+    line-height: 30px;
+    line-height: 33px;
+}
+
+#box{
+    padding: 20px;
+    position: absolute;
+    width: 1500px;
+    top: 90px;
+    left: 10px;
+
+    --b: 5px;   /* thickness of the border */
+    --c: rgb(15, 0, 100);   /* color of the border */
+    --w: 80px;  /* width of border */
+    
+  
+    border: var(--b) solid #0000; /* space for the border */
+    --_g: #0000 90deg,var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+    background:
+      conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
+      conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
+      conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+    
+    /*Irrelevant code*/  
+    margin: 0px;
+    height: 600px;
+}
+
+
+main img{
+    position: absolute;
+    width: 300px;
+    right: 30px;
+    top: 10px;
+    border-radius: 15px;
+    background-color: black;
+    opacity: 0.7;
+}
+
+main h1{
+    padding: 20px;
+    background-color: transparent;
+}
+
+main h2{
+    padding: 10px;
+    margin-left: 7px;
+    background-color: transparent;
+}
+
+main p{
+    padding: 20px;
+    background-color: transparent;
+}
+
+main a{
+    color: white;
+    text-decoration: none;   
+    background-color: transparent;
+}
+
+.wrapper{
+    width: 80%;
+    height: auto;
+    position: absolute;
+    bottom: -50px;
+    left: 190px;
+}
+
+.wrapper div{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.51);
+    width: 500px;
+    border: 2px solid rgba(6, 0, 42, 0.641);
+    height: 150px;
+}
+
+.wrapper a{
+    position: absolute;
+}
+
+#hi h1{
+    left: 160px;
+    top: 43px;
+}
+
+.wrapper h1{
+    filter: brightness(200%);
+    background-color: transparent;
+    text-align: center;
+    position: absolute;
+    left: 90px;
+    top: 30px;
+    padding: 10px;
+}
+
+.wrapper:hover{
+    transform: scale(1.2);
+}
+
+.wrapper a{
+    transition: all 0.4s ease-in-out;
+    width: 0%;
+}
+
+.wrapper a:hover{
+    box-shadow: 20px 20px 30px rgba(12, 0, 79, 0.744);
+}
+
+div{
+    transition: all 0.3s ease-in-out;
+}
+
+#menue{
+    transition: transform .3s cubic-bezier(0, .52, 0, 1);
+}
+
+#menue2{
+    width: 19vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.967), rgba(5, 0, 33, 0.956));
+    box-shadow: 20px 20px 30px rgb(8, 0, 55);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate3d(-100vw, 0, 0);
+    transition: transform .9s cubic-bezier(0, .52, 0, 1);
+    z-index: 1000;
+}
+
+#menue2.hi{
+    transition: all 0.3s cubic-bezier(0, 0.52, 0, 0);
+    transform: translate3d(0vw, 0, 0);
+}
+
+#menue2.hi2{
+    transform: translate3d(-100vw, 0, 0);
+}
+
+#menue2 ul{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    position: absolute;
+    left: 0px;
+    top: 70px;
+    width: 100%;
+}
+
+#menue2 ul li{
+    display: inline-block;
+    list-style-type: none;
+    background-color: transparent;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 80px;
+}
+
+#menue2 li:hover {
+    background-color: rgb(6, 0, 42);
+}
+
+#menue2:hover{
+    background-color: rgba(6, 0, 42, 0.7);
+}
+
+#menue2 ul li a{
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    width: 100%;
+    height: 90px;
+    margin-left: 0px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#menue2 ul li a:hover{
+    transform: scale(1.1);
+}
+
+#inst h1{
+    left: 35px;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid rgba(0, 12, 72, 0.404);
+}
